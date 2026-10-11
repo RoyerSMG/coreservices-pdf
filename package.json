@@ -1,0 +1,33 @@
+{
+  "name": "coreservices",
+  "version": "1.0.0",
+  "description": "Node.js Modular Monolith Engine - PDF Encryption Service",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node --test tests/**/*.test.js",
+    "test:watch": "node --watch --test tests/**/*.test.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "pdf",
+    "encryption",
+    "hexagonal-architecture",
+    "modular-monolith"
+  ],
+  "author": "CoreServices Team",
+  "license": "MIT",
+  "dependencies": {
+    "@pdfsmaller/pdf-encrypt": "^1.2.0",
+    "busboy": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pdf-lib": "^1.16.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
